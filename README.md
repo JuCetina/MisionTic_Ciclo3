@@ -7,3 +7,4 @@
 * Jeimmy Camelo
 * Emilio Noguera
 * Juliette Cetina
+* Diego Correa
