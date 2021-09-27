@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRADOS</title>
+    <style>
+        label{
+            width: 180px;
+            display: inline-block;
+        }
+        #submit{
+            margin-left: 180px;
+            width: 20%;
+            background-color: aquamarine;
+        }
+        #consulta{
+            margin-left: 183px;
+            width: 20%;
+            background-color: aquamarine;
+        }
+        #esquema{
+            margin-left: 183px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <img src="header.jpg" width="1250px" height="100"/>
+        
+    </header>
+    <hr>
+    <a href="listadoVacunados.html" target="_blank">[LISTA DE VACUNADOS] </a>
+    <hr><br>
+    
+    <h2 style="color: blue ;text-align: center; background-color: blanchedalmond;"> FORMULARIO DE CONSULTA Y REGISTRO</h2><br><br>
+    <h3 style="color:red;"><ins></ins> CONSULTA PARA USUARIOS REGISTRADOS</h3>
+
+    
+    <form>
+        
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+        <label for="documento"> Tipo de documento:  </label>
+        <select id="documento" name="documentos">
+            <option value="Tarjeta de Identidad"> Tarjeta de identidad</option>
+            <option value="Cédula de Ciudadania"> Cédula de ciudadania</option>
+            <option value="Tarjeta de Identidad de Extranjero"> Tarjeta de identidad de Extranjero</option>
+            <option value="Cédula de Extranjería"> Cédula de extranjería</option>      
+        </select><br><br>
+
+        <label for="Número de documento">Número de documento:</label>
+        <input type="text" size="30" id="Número de documento" name="Número de documento" placeholder="Digite sin puntos" style="text-align: center"><br><br>
+        <label for="correoE"> Correo eléctrónico </label>
+        <input type="text" size="30" id="correoE" name="Correo eléctrónico" placeholder="Escriba aqui su correo electrónico" style="text-align: center" required="true"><br>
+        <p>
+        <input type="submit" value="Consultar Usuario" id="consulta"><br><br>
+        </p>
+
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+
+        <h3 style="color: red;"><ins></ins> REGISTRO DE USUARIO </h3>
+
+        <label for="nombre">Nombre y Apellidos: </label>
+        <input type="text" size="30" id="nombre" name="Nombre" placeholder="Mayuscula solo al inicio de cada palabra" size="20" style="text-align: center" required="true"><br><br>
+        <label for="Número de documento">Número de documento: </label>
+        <input type="Número de documento" size="30" id="Número de documento" name="Número de documento" placeholder="Digite sin puntos" style="text-align: center" required="true"><br><br>
+        <label for="edad"> Edad: </label>
+        <input type="text" size="30" id="edad" name="Edad" placeholder="Escriba aquí su edad en números" style="text-align: center" required="true"><br><br>
+        <label for="correoE"> Correo eléctrónico </label>
+        <input type="text" size="30" id="correoE" name="Correo eléctrónico" placeholder="Escriba aqui su correo electrónico" style="text-align: center" required="true"><br><br>
+
+        <label for="vacuna"> Vacuna aplicada: </label>
+        <select id="vacuna" name="vacunas">
+            <option value="AstraZeneca"> AstraZeneca</option>
+            <option value="janssen"> janssen</option>
+            <option value="Pfizer"> Pfizer</option>
+            <option value="moderna"> moderna</option>
+            <option value="SINOVAC"> SINOVAC</option>
+            <option value="COVAX"> COVAX</option>        
+        </select><br><br>
+
+        <label for="fecha1">Fecha primera dosis: </label>
+        <input type="date" id="fecha1" name="Fecha primera dosis" min="2021-02-17" max="2021-12-31"><br>
+        <p>
+        <label for="fecha2">Fecha segunda dosis: </label>
+        <input type="date" id="fecha2" name="Fecha segunda dosis" min="2021-02-17" max="2021-12-31"><br>
+        </p>
+        <label for="esquema">Esquema completo: </label> <br>
+        <input type="radio" name="esquema" value="Sí" id="esquema">Sí<br>
+        <input type="radio" name="esquema" value="No" id="esquema">No<br>
+        <p>
+        <input type="submit" value="Registrar Información" id="submit"><br><br>
+        </p>
+    </form>
+
+
+</body>
+</html>
