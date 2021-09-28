@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+
+</head>
+
+
+<body>
+
+    <form action="" method="get" autocomplete="off">
+        <h3>Busqueda</h3>
+        <label form="cedula">Cedula</label>
+        <input name="cedula" type="text" value="" maxlength="10" placeholder="Numero de Cedula"><br><br>
+        <input type="submit" value="Buscar"><br><br>
+        <h3>Datos personales</h3>
+        <label form="nombre">Nombres y Apellidos:</label>
+        <input name="nombre" type="text"  maxlength="10" placeholder="Nombre Completo"><br><br>
+        <label form="telefono">Telefono:</label>
+        <input name="telefono" type="tel"  maxlength="10" placeholder="Telefono">
+        <h3>Vacuna</h3>
+        <input type="radio" name="gender" value="Sinovac" checked> Sinovac
+        <br>
+        <input type="radio" name="gender" value="Pfizer"> Pfizer
+        <br>
+        <input type="radio" name="gender" value="BioNTech"> BioNTech
+        <br>
+        <input type="radio" name="gender" value="AstraZeneca"> AstraZeneca
+        <h3>Esquema Completo</h3>
+        <input type="checkbox" name="esquema" value="false"><br>
+        <h3>Fecha de Vacunas</h3>
+        <label form="date">Fecha Primera Dosis:</label>
+        <input type="date" name="primera" min="2000-01-02">
+        <label form="date">Fecha Segunda Dosis:</label>
+        <input type="date" name="segunda" min="2000-01-02">
+        <br>
+        <input type="submit" value="Actualizar">
+    </form>
+
+
+</body>
+
+</html>
+
+</html>
