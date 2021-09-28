@@ -1,20 +1,31 @@
-<!doctype html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Formulario</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRADOS</title>
 </head>
-
-
 <body>
+    <header>
+        <img src="encabezado.jpg" width="1550px" height="100"/>
+        
+    </header>
+    <hr>
+
+    <a href="index.html">Inicio</a>
+    <a href="registro-consulta.html">Contenido</a>
+    
+    <hr><br>
+    <h2 style="color:cornflowerblue ;text-align: center">CONSULTA DE CÉDULA </h2><br><br>
+
+    <form>
+        <label for="cedula">Ingrese el número de cédula:</label>
+        <input type="text" size="60" id="cedula" name="Cedula" placeholder="Escriba aqui el númerode cedula sin puntos" style="text-align: center">
+        <input type="submit" value="Consultar Usuario"><br><br>
+    </form>
 
     <form action="" method="get" autocomplete="off">
-        <h3>Busqueda</h3>
-        <label form="cedula">Cedula</label>
-        <input name="cedula" type="text" value="" maxlength="10" placeholder="Numero de Cedula"><br><br>
-        <input type="submit" value="Buscar"><br><br>
         <h3>Datos personales</h3>
         <label form="nombre">Nombres y Apellidos:</label>
         <input name="nombre" type="text"  maxlength="10" placeholder="Nombre Completo"><br><br>
@@ -39,9 +50,5 @@
         <input type="submit" value="Actualizar">
     </form>
 
-
 </body>
-
-</html>
-
 </html>
