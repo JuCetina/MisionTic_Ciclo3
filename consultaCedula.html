@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRADOS</title>
+</head>
+<body>
+    <header>
+        <img src="encabezado.jpg" width="1550px" height="100"/>
+        
+    </header>
+    <hr>
+    <a href="listadoVacunados.html" target="_blank">[LISTA DE VACUNADOS] </a>
+    <hr><br>
+    <h2 style="color:cornflowerblue ;text-align: center">CONSULTA DE CÉDULA </h2><br><br>
+    <form>
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+        <label for="cedula">Ingrese el número de cédula:</label>
+        <input type="text" size="60" id="cedula" name="Cedula" placeholder="Escriba aqui el númerode cedula sin puntos" style="text-align: center">
+        <input type="submit" value="Consultar Usuario"><br><br>
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+
+        <h3 style="color: crimson;"><ins>FORMULARIO DE REGISTRO Y ACTUALIZACIÓN</ins> </h3>
+        <label for="nombre">Nombre: </label>
+        <input type="text" size="60" id="nombre" name="Nombre" placeholder="Escriba aquí su nombre completo solo con mayuscula de inicio" style="text-align: center" required="true"><br><br>
+        <label for="cedula">Cédula: </label>
+        <input type="text" size="60" id="cedula" name="Cedula" placeholder="Escriba aquí el número de cedula sin puntos" style="text-align: center" required="true"><br><br>
+        <label for="edad"> Edad: </label>
+        <input type="text" size="60" id="edad" name="Edad" placeholder="Escriba aquí su edad en números" style="text-align: center" required="true"><br><br>
+        <label for="direccion"> Dirección: </label>
+        <input type="text" size="60" id="direccion" name="Dirección" placeholder="Escriba aqui la dirección de su domicilio" style="text-align: center" required="true"><br><br>
+        <label for="vacuna"> Marca Vacuna: </label>
+        <select id="vacuna" name="vacunas">
+            <option value="AstraZeneca"> AstraZeneca</option>
+            <option value="janssen"> janssen</option>
+            <option value="Pfizer"> Pfizer</option>
+            <option value="moderna"> moderna</option>
+            <option value="SINOVAC"> SINOVAC</option>
+            <option value="COVAX"> COVAX</option>
+            
+        </select><br><br>
+        <label for="fecha1">Fecha primera dosis: </label>
+        <input type="date" id="fecha1" name="Fecha primera dosis" min="2021-02-17" max="2021-12-31">
+        <label for="fecha2">Fecha segunda dosis: </label>
+        <input type="date" id="fecha2" name="Fecha segunda dosis" min="2021-02-17" max="2021-12-31"><br>
+        <label for="esquema">esquema completo: </label><br>
+        <input type="submit" value="Guardar"><br><br>
+    </form>
+
+
+</body>
+</html>
