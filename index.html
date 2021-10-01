@@ -5,106 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Inicio</title>
 </head>
 
 <body>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-    </style>
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="registro-consulta.html">Registro y consulta</a>
+
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Inicio</a>
+            <a class="header__link" href="registro-consulta.html">Registro y consulta</a>
         </nav>
     </header>
-    <main>
-        <table>
-            <caption>Listado de personas vacunadas</caption>
-            <tr>
-                <th>Nombre</th>
-                <th>Cédula</th>
-                <th>Teléfono</th>
-                <th>Laboratorio Vacuna</th>
-                <th>Fecha primera dosis</th>
-                <th>Fecha segunda dosis (Si aplica)</th>
-                <th>Esquema completo</th>
+    
+    <main class="main">
+        <table class="table">
+            <caption class="title">Listado de personas vacunadas</caption>
+            <tr class="table__row">
+                <th class="table__header">Nombre</th>
+                <th class="table__header">Cédula</th>
+                <th class="table__header">Teléfono</th>
+                <th class="table__header">Laboratorio Vacuna</th>
+                <th class="table__header">Fecha primera dosis</th>
+                <th class="table__header">Fecha segunda dosis (Si aplica)</th>
+                <th class="table__header">Esquema completo</th>
             </tr>
-            <tr>
-                <td>Ana Martinez García</td>
-                <td>345345345</td>
-                <td>1234567</td>
-                <td>Janssen</td>
-                <td>22/04/2021</td>
-                <td></td>
-                <td>Si</td>
+            <tr class="table__row">
+                <td class="table__detail">Ana Martinez García</td>
+                <td class="table__detail">345345345</td>
+                <td class="table__detail">1234567</td>
+                <td class="table__detail">Janssen</td>
+                <td class="table__detail">22/04/2021</td>
+                <td class="table__detail"></td>
+                <td class="table__detail">Si</td>
             </tr>
-            <tr>
-                <td>Juan Alberto Rodriguez</td>
-                <td>9454654</td>
-                <td>7654321</td>
-                <td>Sinovac</td>
-                <td>09/05/2021</td>
-                <td>12/08/2021</td>
-                <td>Si</td>
+            <tr class="table__row">
+                <td class="table__detail">Juan Alberto Rodriguez</td>
+                <td class="table__detail">9454654</td>
+                <td class="table__detail">7654321</td>
+                <td class="table__detail">Sinovac</td>
+                <td class="table__detail">09/05/2021</td>
+                <td class="table__detail">12/08/2021</td>
+                <td class="table__detail">Si</td>
             </tr>
-            <tr>
-                <td>Marcos Vidal Ayala</td>
-                <td>789789</td>
-                <td>9876543</td>
-                <td>Moderna</td>
-                <td>09/05/2021</td>
-                <td></td>
-                <td>No</td>
+            <tr class="table__row">
+                <td class="table__detail">Marcos Vidal Ayala</td>
+                <td class="table__detail">789789</td>
+                <td class="table__detail">9876543</td>
+                <td class="table__detail">Moderna</td>
+                <td class="table__detail">09/05/2021</td>
+                <td class="table__detail"></td>
+                <td class="table__detail">No</td>
             </tr>
-            <tr>
-                <td>María Isabel Herrera Peralta</td>
-                <td>53534562324</td>
-                <td>3456789</td>
-                <td>Sinovac</td>
-                <td>22/04/2021</td>
-                <td></td>
-                <td>No</td>
+            <tr class="table__row">
+                <td class="table__detail">María Isabel Herrera Peralta</td>
+                <td class="table__detail">53534562324</td>
+                <td class="table__detail">3456789</td>
+                <td class="table__detail">Sinovac</td>
+                <td class="table__detail">22/04/2021</td>
+                <td class="table__detail"></td>
+                <td class="table__detail">No</td>
             </tr>
-            <tr>
-                <td>Jose Sandoval Pérez</td>
-                <td>856754634</td>
-                <td>4836248</td>
-                <td>Janssen</td>
-                <td>09/05/2021</td>
-                <td></td>
-                <td>Si</td>
+            <tr class="table__row">
+                <td class="table__detail">Jose Sandoval Pérez</td>
+                <td class="table__detail">856754634</td>
+                <td class="table__detail">4836248</td>
+                <td class="table__detail">Janssen</td>
+                <td class="table__detail">09/05/2021</td>
+                <td class="table__detail"></td>
+                <td class="table__detail">Si</td>
             </tr>
-            <tr>
-                <td>Marcela Torres Figueroa</td>
-                <td>12453457</td>
-                <td>4735978</td>
-                <td>Pfizer</td>
-                <td>12/08/2021</td>
-                <td>12/08/2021</td>
-                <td>Si</td>
+            <tr class="table__row">
+                <td class="table__detail">Marcela Torres Figueroa</td>
+                <td class="table__detail">12453457</td>
+                <td class="table__detail">4735978</td>
+                <td class="table__detail">Pfizer</td>
+                <td class="table__detail">12/08/2021</td>
+                <td class="table__detail">12/08/2021</td>
+                <td class="table__detail">Si</td>
             </tr>
-            <tr>
-                <td>Carla Vargas Camacho</td>
-                <td>53452657758</td>
-                <td>2357379</td>
-                <td>Moderna</td>
-                <td>22/04/2021</td>
-                <td></td>
-                <td>No</td>
+            <tr class="table__row">
+                <td class="table__detail">Carla Vargas Camacho</td>
+                <td class="table__detail">53452657758</td>
+                <td class="table__detail">2357379</td>
+                <td class="table__detail">Moderna</td>
+                <td class="table__detail">22/04/2021</td>
+                <td class="table__detail"></td>
+                <td class="table__detail">No</td>
             </tr>
-            <tr>
-                <td>Pedro González</td>
-                <td>1078969567</td>
-                <td>5667788</td>
-                <td>Sinovac</td>
-                <td>22/04/2021</td>
-                <td>12/08/2021</td>
-                <td>Si</td>
+            <tr class="table__row">
+                <td class="table__detail">Pedro González</td>
+                <td class="table__detail">1078969567</td>
+                <td class="table__detail">5667788</td>
+                <td class="table__detail">Sinovac</td>
+                <td class="table__detail">22/04/2021</td>
+                <td class="table__detail">12/08/2021</td>
+                <td class="table__detail">Si</td>
             </tr>
         </table>
     </main>

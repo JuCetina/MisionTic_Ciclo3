@@ -5,68 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Registro y consulta</title>
 </head>
 
 <body>
-    <header>
-        <img src="encabezado.jpg" width="1550px" height="100" />
-    </header>
-
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="registro-consulta.html">Registro y consulta</a>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Inicio</a>
+            <a class="header__link" href="registro-consulta.html">Registro y consulta</a>
         </nav>
     </header>
-    <main>
-        <h1>REGISTRO Y CONSULTA DE VACUNADOS</h1>
+    
+    <main class="main main--two">
+        <h1 class="title title-two">Registro y consulta de vacunados</h1>
         
-        <h2 style="color:cornflowerblue ;text-align: center">CONSULTA DE CÉDULA DE VACUNADO</h2><br><br>
+        <h2 class="subtitle">CONSULTA DE CÉDULA DE VACUNADO</h2>
 
         <form>
-            <label for="cedula">Ingrese el número de cédula:</label>
-            <input type="text" size="60" id="cedula" name="cedula"
-                placeholder="Escriba aquí el número de cédula sin puntos" style="text-align: center">
-            <input type="submit" value="Consultar Usuario">
+            <label class="label" for="cedula">Ingrese el número de cédula:</label>
+            <input class="textfield" type="text" id="cedula" name="cedula"
+                placeholder="Ejemplo: 1234567">
+            <input class="button" type="submit" value="Consultar Usuario">
         </form>
 
-        <h2 style="color:cornflowerblue ;text-align: center">REGISTRO DE VACUNADO</h2><br><br>
+        <h2 class="subtitle">REGISTRO DE VACUNADO</h2>
 
         <form action="" method="get" autocomplete="off">
-            <h3>Datos personales</h3>
-            <label for="nombre">Nombres y Apellidos:</label>
-            <input name="nombre" id="nombre" type="text" maxlength="10" placeholder="Nombre Completo"><br><br>
-            <label for="cedulanuevo">Cédula:</label>
-            <input name="cedula" id="cedulanuevo" type="text" maxlength="10" placeholder="Cédula"><br><br>
-            <label for="telefono">Teléfono:</label>
-            <input name="telefono" id="telefono" type="tel" maxlength="10" placeholder="Teléfono">
-            <h3>Vacuna aplicada</h3>
-            <label for="Sinovac">Sinovac</label>
-            <input type="radio" id="Sinovac" name="vacuna" value="Sinovac" checked> 
-            <br>
-            <label for="Pfizer">Pfizer</label>
-            <input type="radio" id="Pfizer" name="vacuna" value="Pfizer"> 
-            <br>
-            <label for="Moderna">Moderna</label>
-            <input type="radio" id="Moderna" name="vacuna" value="Moderna"> 
-            <br>
-            <label for="AstraZeneca">AstraZeneca</label>
-            <input type="radio" id="AstraZeneca" name="vacuna" value="AstraZeneca"> 
-            <br>
-            <label for="Janssen">Janssen</label>
-            <input type="radio" id="Janssen" name="vacuna" value="Janssen"> 
-            <h3>Esquema completo</h3>
-            <label for="esquema">Si</h3>
-            <input type="checkbox" name="esquema" id="esquema"><br>
-            <h3>Fechas de Aplicación de vacuna</h3>
-            <label for="primera">Fecha Primera Dosis:</label>
-            <input type="date" name="primera" id="primera" min="2021-02-01" max="2021-12-31">
-            <br>
-            <label for="segunda">Fecha Segunda Dosis:</label>
-            <input type="date" name="segunda" id="segunda" min="2021-02-01" max="2021-12-31">
-            <br>
-            <input type="submit" value="Guardar">
+            <h3 class="subtitle-two">Datos personales</h3>
+
+            <div class="container">
+                <label class="label" for="nombre">Nombres y Apellidos:</label>
+                <input class="textfield" name="nombre" id="nombre" type="text" maxlength="10" placeholder="Ejemplo: Juan Pérez">
+            </div>
+            <div class="container">
+                <label class="label" for="cedulanuevo">Cédula:</label>
+                <input class="textfield" name="cedula-reg" id="cedulanuevo" type="text" maxlength="10" placeholder="Ejemplo: 1234567">
+            </div>
+            <div class="container">
+                <label class="label" for="telefono">Teléfono:</label>
+                <input class="textfield" name="telefono" id="telefono" type="tel" maxlength="10" placeholder="Ejemplo: 6011234567">
+            </div>
+
+            <h3 class="subtitle-two">Vacuna aplicada</h3>
+            <div class="container">
+                <label class="label" for="Sinovac">Sinovac</label>
+                <input class="button-special" type="radio" id="Sinovac" name="vacuna" value="Sinovac" checked> 
+            </div>
+            
+            <div class="container">
+                <label class="label" for="Pfizer">Pfizer</label>
+                <input class="button-special" type="radio" id="Pfizer" name="vacuna" value="Pfizer"> 
+            </div>
+            
+            <div class="container">
+                <label class="label" for="Moderna">Moderna</label>
+                <input class="button-special" type="radio" id="Moderna" name="vacuna" value="Moderna"> 
+            </div>
+            
+            <div class="container">
+                <label class="label" for="AstraZeneca">AstraZeneca</label>
+                <input class="button-special" type="radio" id="AstraZeneca" name="vacuna" value="AstraZeneca"> 
+            </div>
+            
+            <div class="container">
+                <label class="label" for="Janssen">Janssen</label>
+                <input class="button-special" type="radio" id="Janssen" name="vacuna" value="Janssen">
+            </div>
+
+            <h3 class="subtitle-two">Esquema completo</h3>
+            <div class="container">
+                <label class="label" for="esquema">Si</label>
+                <input class="button-special" type="checkbox" name="esquema-completo" id="esquema">
+            </div>
+
+            <h3 class="subtitle-two">Fechas de Aplicación de vacuna</h3>
+            <div class="container">
+                <label class="label" for="primera">Fecha Primera Dosis:</label>
+                <input class="textfield" type="date" name="primera" id="primera" min="2021-02-01" max="2021-12-31">
+            </div>
+            
+            <div class="container">
+                <label class="label" for="segunda">Fecha Segunda Dosis:</label>
+                <input class="textfield" type="date" name="segunda" id="segunda" min="2021-02-01" max="2021-12-31">
+            </div>
+            
+            <input class="button" type="submit" value="Guardar">
         </form>
     </main>
 
