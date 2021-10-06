@@ -30,12 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function() {
     $('.datepicker').datepicker();
 });
+
+//funcion para fecha
 $(function() {
     $("#farmaceutica").change(function() {
         if ($(this).val() === "janssen") {
             $("#2da_dosis").prop("disabled", true);
+            $("#esquema").prop("checked","checked")
+            $("#2da_dosis").val("No Aplica");
         } else {
             $("#2da_dosis").prop("disabled", false);
+            
+            
         }
     });
 });
+
+
+
+// $("#esquema").prop("checked","checked")
