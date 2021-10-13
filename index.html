@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="estilo/estilo.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5287daa5c3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="fondoimg">
     <style>
         table,
         th,
@@ -16,13 +18,51 @@
             border: 1px solid black;
         }
     </style>
+    
     <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="registro-consulta.html">Registro y consulta</a>
-        </nav>
-    </header>
+        <div class="ancho">
+            <div class="logo">
+                <p><a href="index.html">Inicio</a></p>
+                <p><a href="registro-consulta.html">Registro y Consulta</a></p>
+                <a href=""><img src="" alt=""></a>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">[Inicio]</a></li>
+                    <li><a href="#">[Información]</a></li>
+                    <li><a href="#">[Enlaces de interes]</a></li>
+                    <li><a href="#">[Contacto]</a></li>
+                </ul>
+            </nav>
+        </div>
+   </header>
+   <br><br><br><br><br>
+    
     <main>
+
+        <!--seccion de informacion de bienvenida-->
+        <section class="bienvenida">
+            <h3>Bienvenido al Centro de Conusulta de Vacunacion Covid-19</h3>
+            <p>Aquí como ciudadano podrá acceder a la base de datos institucional para la consulta 
+                y seguimiento del estado de su vacunación y la de terceros. La base de datos es de gran utilidad para cualquier 
+            ciudadano, empresas e instituciones, al proveer de manera gratuita y en tiempo de real el avance de la vacunación en el pais </p>
+            <br>
+            <p>El centro tiene a su disposición los siguiente servicios:</p>
+            <ul>
+                <li>Conuslta de la base de datos de las personas que ya se encuentran vacunadas mediante una base de datos que se actualiza todos los días</li>
+                <li>Consulta del estado de la vacunación personal, la cual incluye la marca de la vacuna aplicada, número de dosis aplicadas, fechas de aplicación y si se cuenta con el esquema completo</li>
+                <li>Formato de registo de vacunación (solo para personal de la salud encargado del proceso)</li>
+            </ul>
+
+        </section>
+
+        <!--seccion de tabla-->
+        <section class="tabla">
+            <h3>TABLA DE PERSONAS VACUNADAS EN EL PAÍS</h3>
+            <P>En la siguiente tabla se puede consultar la lista de todas las personas que ya se encuentran vacunadas en el país. En esta se puede encontrar el nombre completo,
+                apellidos, identificación, marca de la vacuna recibida y fechas de aplicacion de cada una de las dosis. Si desea realizar una consulta rápida, entre al enlace de registro-consulta. 
+            </P>
         <table>
             <caption>Listado de personas vacunadas</caption>
             <tr>
@@ -106,8 +146,160 @@
                 <td>12/08/2021</td>
                 <td>Si</td>
             </tr>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>.</td>
+                </tr>
+            </tfoot>
         </table>
+        <br>
+         <!---se requiere otra pagina para esto-->
+        <a href="https://www.dane.gov.co/files/images/ventana-unica/documentos/politicadedatosdane.pdf">POLÍTICA DE TRATAMIENTO Y PROTECCIÓN DE DATOS PERSONALES</a>
+    </section>
+    <br>
+     
+    <!--seccion de enlaces de interes-->
+
+    <section class="enlaces">
+        <img src="fondosectabla.jpg" alt="fondoenlaces">
+        <div class="contenidoenlaces">
+            <h3>Enlaces Relacionados</h3>
+            <div id="cuadroenlaces">
+        
+        
+    <hr><br>
+
+    <div><a href="https://app.powerbi.com/view?r=eyJrIjoiYjVmNDQ0ZTMtMzhlYi00NTcyLTg5NzAtMjU3NDVjNTZlNGQ2IiwidCI6IjFjMjBkMDU2LWIzZTQtNGYwNy1hNTRjLTg0ZTQyMTZhMjkyMCIsImMiOjR9&pageName=ReportSection1290b0a3ca8200c59702">
+        <p>PLAN NACIONAL DE VACUNACIÓN</p>
+    </a></div><br>
+    <div><a href="https://www.who.int/es/news-room/q-a-detail/coronavirus-disease-(covid-19)-vaccines?adgroupsurvey={adgroupsurvey}">
+        <p>ORGANIZACIÓN MUNDIAL DE LA SALUD (OMS)</p>
+    </a></div><br>
+    <div><a href="https://covid19.minsalud.gov.co/">
+        <p>MINISTERIO DE SALUD (minsalud)</p>
+    </a></div><br>
+    <div>
+    <a href="https://www.facebook.com/coronavirus_info/?page_source=bookmark&hoisted_module_types[0]=update&hoisted_module_types[1]=vaccine_finder&hoisted_module_types[2]=vaccine_tracker&hoisted_module_types[3]=latest_news">
+        <p>COVID-19: Centro de información</p>
+    </a>
+</div><br>
+<div>
+    <a href="https://coronaviruscolombia.gov.co/Covid19/aislamiento-saludable/coronapp.html">
+        <p>CORONAPP</p>
+    </a>
+</div><br>
+<div>
+    <a href="https://coronavirus.jhu.edu/map.html">
+        <p>MAPAMUNDI CORONA VIRUS</p>
+    </a>
+</div><br>
+<div>
+    <a href="https://mivacuna.sispro.gov.co/MiVacuna/">
+        <p>MI VACUNA</p>
+    </a>
+</div><br>
+</div>
+</div>
+    </section>
+
+    <!--seccion de temas de interes con imagenes-->
+
+
+    <section class="titulo_contenedor">  
+        <h3>TEMAS DE INTERES</h3>
+        <h5>los siguientes enlaces se encuentran informacion importante sobre el auto cuidado</h5>
+         </section>
+
+    <section >
+
+        <div class="contenedor_columnas" >
+
+        <div class="columna" style="background-color:#aaa; ">
+            <h5>Directorio de vacunación</h5>
+
+            <a href="https://www.minsalud.gov.co/salud/publica/Vacunacion/Paginas/puntos-de-vacunacion.aspx"><img src="tema2.jpg" alt="tema2"></a> </img>
+            
+        </div>
+        <div class="columna" style="background-color:#bbb; ">
+            
+            <a href="https://www.who.int/es/news-room/q-a-detail/vaccines-and-immunization-what-is-vaccination?adgroupsurvey={adgroupsurvey}"><img src="tema3.jpg" alt="tema3"></a></img>
+                <h5>Vacunas e inmunización: ¿qué es la vacunación?</h5> 
+        </div>
+        <div class="columna" style="background-color:#ccc;">
+            <h5>Protocolos para prevenir y mitigar el Covid-19</h5>
+            <a href="https://coronaviruscolombia.gov.co/Covid19/protocolos.html"><img src="tema4.jpg" alt="tema4"></a></img>
+                
+            
+        </div>
+        <div class="columna" style="background-color:#ddd;">
+            <a href="https://espanol.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html"><img src="tema1.jpg" alt="tema1"></a></img>
+                <h5>Guía para empresas y empleadores</h5>
+            
+        </div>
+    </div>
+    </section>
+
+
+    <section class="banner1">
+
+    </section>
     </main>
+    <footer class="pie_de_pagina">   <!--AÑADIR ICONOS DE CONTACTO Y CORREO-->
+        <div>
+            <h3>CONTACTO</h3>
+            <aside>
+                <div>
+                    <i class="fas fa-user"></i>
+                <p>Diego Correa Lopez  </p>
+                <i class="fas fa-envelope-square"></i>
+                    <email>diego.correa@o365.unab.edu.co</email>
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <p>Emilio José Eduardo Noguera Salazar </p> 
+                    <i class="fas fa-envelope-square"></i><email>emilio.noguera@o365.unab.edu.co</email>
+                
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <p>Erika Ortiz </p>  
+                    <i class="fas fa-envelope-square"></i> <email>erika.ortiz@o365.unab.edu.co </email>
+                
+            </div>
+            <div>
+                <i class="fas fa-user"></i>
+                <p>Jeimmy Camelo </p>   
+                    <i class="fas fa-envelope-square"></i> <email>jeimmy.camelo@o365.una.edu.co</email>
+                
+            </div>
+                <p>Juliette Andrea Cetina Zorro </p>
+                    <i class="fas fa-envelope-square"></i> <email>juliette.cetina@o365.unab.edu.co</email>
+                
+            <div>
+                <i class="fas fa-user"></i>
+                <p>Yiduard Andres Bolivar Ruiz </p> 
+                    <i class="fas fa-envelope-square"></i> <email>yiduard.bolivar@o365.unab.edu.co</email>
+                
+            </div>
+            </aside>
+            <hr>
+            <a href="https://github.com/luishoyos91/C3-G47-Grupo10.git">Repositorio GitHub Grupo 9</a>
+            <h5>Copyright © 2021 <{[GrUpO 9]}> </h5>
+            <P> GrUpO 9 </P>  <!--falta el logo del grupo-->
+
+            <h6>Última actualización: octubre 2021</h6>
+
+
+        </div>
+
+      
+    </footer>
 </body>
 
 </html>
