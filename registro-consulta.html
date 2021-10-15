@@ -54,16 +54,7 @@
                 <form id="form_busq" class="col l5 s12 offset-l1" autocomplete="off" method="GET" action="#">
                     <hr>
                     <h4>Busqueda de Paciente</h4><br>
-                    <div class="row">
-                        <label class="col s8"> Escoja una opcion</label>
-                        <select class="browser-default col s8" required>
-                          <option value="" disabled selected>Tipo de Documento</option>
-                          <option value="cc">Cedula Ciudadania</option>
-                          <option value="ti">Tarjeta de Identidad</option>
-                          <option value="ce">Cedula de Extranjeria</option>
-                          <option value="pas">Pasaporte</option>
-                        </select>
-                    </DIV>
+                    
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
                             <input id="cedulab" type="text" class="validate" required>
@@ -79,40 +70,28 @@
                 <form id="form_info" class="col l5 s12 offset-l1 " autocomplete="off" method="GET" action="#">
                     <hr>
                     <h4>Datos del Paciente</h4><br>
+
+                    <div class="row">
+                        <div class="input-field col s12 m10 l8">
+                            <input id="cedula" type="text" class="validate" required>
+                            <label for="cedula">Cédula</label>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="input-field col s12 m10 ">
                             <input id="nombre" type="text" class="validate" required>
                             <label for="nombre">Nombre Completo</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <label class="col s8 ">Escoja una opcion</label>
-                        <select class="browser-default col s8" required>
-                          <option class="opciones" value="" disabled selected>Tipo de Documento</option>
-                          <option value="cc">Cedula Ciudadania</option>
-                          <option value="ti">Tarjeta de Identidad</option>
-                          <option value="ce">Cedula de Extranjeria</option>
-                          <option value="pas">Pasaporte</option>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 m10 l8">
-                            <input id="cedula" type="text" class="validate" required>
-                            <label for="cedula">Numero de identificacion</label>
-                        </div>
-                    </div>
+                    
+                    
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
                             <input id="telefono" type="tel" class="validate" required>
-                            <label for="telefono">Numero de Contacto</label>
+                            <label for="telefono">Teléfono</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12 m10 l8">
-                            <input id="direccion" type="text" class="validate" required>
-                            <label for="direccion">Direccion de Residencia</label>
-                        </div>
-                    </div>
+                    
                     <div>
                         <label class="col s8">Escoja una opcion</label>
                         <select id="farmaceutica" class="browser-default col s8" required>
