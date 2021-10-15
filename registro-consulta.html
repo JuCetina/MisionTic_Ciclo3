@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Registro y consulta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VacunApp</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -27,63 +31,168 @@
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
+    </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
             <div class="container">
-                <label class="label" for="cedulanuevo">Cédula:</label>
-                <input class="textfield" name="cedula-reg" id="cedulanuevo" type="text" maxlength="10" placeholder="Ejemplo: 1234567">
-            </div>
-            <div class="container">
-                <label class="label" for="telefono">Teléfono:</label>
-                <input class="textfield" name="telefono" id="telefono" type="tel" maxlength="10" placeholder="Ejemplo: 6011234567">
-            </div>
+                <br><br>
+                <h1 class="header center blue-text text-darken-2">VacunApp</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Registro y Actualizacion de datos</h5>
+                </div>
+                <br><br>
 
-            <h3 class="subtitle-two">Vacuna aplicada</h3>
-            <div class="container">
-                <label class="label" for="Sinovac">Sinovac</label>
-                <input class="button-special" type="radio" id="Sinovac" name="vacuna" value="Sinovac" checked> 
             </div>
-            
-            <div class="container">
-                <label class="label" for="Pfizer">Pfizer</label>
-                <input class="button-special" type="radio" id="Pfizer" name="vacuna" value="Pfizer"> 
-            </div>
-            
-            <div class="container">
-                <label class="label" for="Moderna">Moderna</label>
-                <input class="button-special" type="radio" id="Moderna" name="vacuna" value="Moderna"> 
-            </div>
-            
-            <div class="container">
-                <label class="label" for="AstraZeneca">AstraZeneca</label>
-                <input class="button-special" type="radio" id="AstraZeneca" name="vacuna" value="AstraZeneca"> 
-            </div>
-            
-            <div class="container">
-                <label class="label" for="Janssen">Janssen</label>
-                <input class="button-special" type="radio" id="Janssen" name="vacuna" value="Janssen">
-            </div>
+        </div>
+        <div class="parallax"><img src="images/banner2.jpg" alt="Vacunados"></div>
+    </div>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div id="busq">
+                <form id="form_busq" class="col l5 s12 offset-l1" autocomplete="off" method="GET" action="#">
+                    <hr>
+                    <h4>Busqueda de Paciente</h4><br>
+                    <div class="row">
+                        <label class="col s8"> Escoja una opcion</label>
+                        <select class="browser-default col s8" required>
+                          <option value="" disabled selected>Tipo de Documento</option>
+                          <option value="cc">Cedula Ciudadania</option>
+                          <option value="ti">Tarjeta de Identidad</option>
+                          <option value="ce">Cedula de Extranjeria</option>
+                          <option value="pas">Pasaporte</option>
+                        </select>
+                    </DIV>
+                    <div class="row">
+                        <div class="input-field col s12 m10 l8">
+                            <input id="cedulab" type="text" class="validate" required>
+                            <label for="cedulab">Numero de Cedula</label>
+                        </div>
+                    </div>
+                    <button class="btn-floating btn-large waves-effect waves-light blue darken-2" type="submit"><i class="material-icons right">search</i></button>
+                    <button class="btn-floating btn-large waves-effect waves-light red darken-2" type="reset"><i class="material-icons right">close</i></button>
+                </form>
 
-            <h3 class="subtitle-two">Esquema completo</h3>
-            <div class="container">
-                <label class="label" for="esquema">Si</label>
-                <input class="button-special" type="checkbox" name="esquema-completo" id="esquema">
             </div>
+            <div class="row">
+                <form id="form_info" class="col l5 s12 offset-l1 " autocomplete="off" method="GET" action="#">
+                    <hr>
+                    <h4>Datos del Paciente</h4><br>
+                    <div class="row">
+                        <div class="input-field col s12 m10 ">
+                            <input id="nombre" type="text" class="validate" required>
+                            <label for="nombre">Nombre Completo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col s8 ">Escoja una opcion</label>
+                        <select class="browser-default col s8" required>
+                          <option class="opciones" value="" disabled selected>Tipo de Documento</option>
+                          <option value="cc">Cedula Ciudadania</option>
+                          <option value="ti">Tarjeta de Identidad</option>
+                          <option value="ce">Cedula de Extranjeria</option>
+                          <option value="pas">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m10 l8">
+                            <input id="cedula" type="text" class="validate" required>
+                            <label for="cedula">Numero de identificacion</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m10 l8">
+                            <input id="telefono" type="tel" class="validate" required>
+                            <label for="telefono">Numero de Contacto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m10 l8">
+                            <input id="direccion" type="text" class="validate" required>
+                            <label for="direccion">Direccion de Residencia</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="col s8">Escoja una opcion</label>
+                        <select id="farmaceutica" class="browser-default col s8" required>
+                      <option  value="" disabled selected>Laboratorio Farmaceutico</option>
+                      <option value="sinovac">Sinovac</option>
+                      <option value="moderna">Moderna</option>
+                      <option value="janssen">Janssen</option>
+                      <option value="pfizer">Pfizer</option>
+                      <option value="astraZeneca">AstraZeneca</option>
+                    </select>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <input id="1er_dosis" type="text" class="datepicker" disabled required>
+                            <label for="1er_dosis">Fecha Primera Dosis</label>
+                        </div>
 
-            <h3 class="subtitle-two">Fechas de Aplicación de vacuna</h3>
-            <div class="container">
-                <label class="label" for="primera">Fecha Primera Dosis:</label>
-                <input class="textfield" type="date" name="primera" id="primera" min="2021-02-01" max="2021-12-31">
+                        <div class="input-field col s12 l6">
+                            <input id="2da_dosis" type="text" class="datepicker" disabled>
+                            <label for="2da_dosis">Fecha Segunda Dosis</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <label>
+                              <input id="esquema" type="checkbox" disabled/>
+                              <span>Esquema Completo</span>
+                            </label>
+                        </p>
+                    </div><br>
+                    <button class="btn waves-effect waves-light blue darken-2" type="submit">Guardar<i class="material-icons right">save</i></button>
+                    <button class="btn waves-effect waves-light red darken-2" type="reset">Limpiar<i class="material-icons right">close</i></button>
+                </form>
             </div>
-            
-            <div class="container">
-                <label class="label" for="segunda">Fecha Segunda Dosis:</label>
-                <input class="textfield" type="date" name="segunda" id="segunda" min="2021-02-01" max="2021-12-31">
+        </div>
+
+    </div>
+    <iframe src="https://vaccinevisualizer.com/"></iframe>
+    <footer class="page-footer  blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+
+                    <h5 class="white-text">Menu</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Registro</a></li>
+                        <li><a class="white-text" href="#!">Busqueda</a></li>
+                        <li> <a class="white-text" href="#!">Base de Datos</a></li>
+                        <li><a class="white-text" href="#!">Ingresar</a></li>
+                    </ul>
+                </div>
+                <div class="col l5 s12">
+                    <img class="responsive-img" src="images/logo.jpg">
+                    <p class="grey-text text-lighten-4">Aplicacion para el registro y actualizacion de Colombianos vacunados contra el COVID-19</p>
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Organización Mundial de la Salud</a></li>
+                        <li><a class="white-text" href="#!">Ministerio de Salud</a></li>
+                        <li><a class="white-text" href="#!">Coronavirus Colombia</a></li>
+                        <li><a class="white-text" href="#!">Covid-19</a></li>
+                    </ul>
+                </div>
             </div>
-            
-            <input class="button" type="submit" value="Guardar">
-        </form>
-    </main>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                By <a class="brown-text text-lighten-3" href="#">Grupo 9 - MisionTIC</a>
+            </div>
+        </div>
+
+    </footer>
 
 
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 
