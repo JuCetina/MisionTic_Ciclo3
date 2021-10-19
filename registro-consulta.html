@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script defer src="js/init.js"></script>
+    <script defer src="js/registro-consulta.js"></script>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                 <br><br>
                 <h1 class="header center blue-text text-darken-2">VacunApp</h1>
                 <div class="row center">
-                    <h5 class="header col s12 light">Registro y Actualizacion de datos</h5>
+                    <h5 class="header col s12 light">Registro, Consulta y Actualizacion de datos</h5>
                 </div>
                 <br><br>
 
@@ -57,12 +59,12 @@
                     
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
-                            <input id="cedulab" type="text" class="validate" required>
+                            <input id="cedulab" type="text" class="busca_cedula validate" required>
                             <label for="cedulab">Numero de Cedula</label>
                         </div>
                     </div>
-                    <button class="btn-floating btn-large waves-effect waves-light blue darken-2" type="submit"><i class="material-icons right">search</i></button>
-                    <button class="btn-floating btn-large waves-effect waves-light red darken-2" type="reset"><i class="material-icons right">close</i></button>
+                    <button class="btn_buscar btn-floating btn-large waves-effect waves-light blue darken-2" type="button"><i class="material-icons right">search</i></button>
+                    <button class="btn-reset btn-floating btn-large waves-effect waves-light red darken-2" type="reset"><i class="material-icons right">close</i></button>
                 </form>
 
             </div>
@@ -74,13 +76,13 @@
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
                             <input id="cedula" type="text" class="validate" required>
-                            <label for="cedula">Cédula</label>
+                            <label id="cedula_label" for="cedula">Cédula</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m10 ">
                             <input id="nombre" type="text" class="validate" required>
-                            <label for="nombre">Nombre Completo</label>
+                            <label id="nombre_label" for="nombre">Nombre Completo</label>
                         </div>
                     </div>
                     
@@ -88,30 +90,30 @@
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
                             <input id="telefono" type="tel" class="validate" required>
-                            <label for="telefono">Teléfono</label>
+                            <label id="telefono_label" for="telefono">Teléfono</label>
                         </div>
                     </div>
                     
                     <div>
                         <label class="col s8">Escoja una opcion</label>
                         <select id="farmaceutica" class="browser-default col s8" required>
-                      <option  value="" disabled selected>Laboratorio Farmaceutico</option>
-                      <option value="sinovac">Sinovac</option>
-                      <option value="moderna">Moderna</option>
-                      <option value="janssen">Janssen</option>
-                      <option value="pfizer">Pfizer</option>
-                      <option value="astraZeneca">AstraZeneca</option>
-                    </select>
+                            <!-- <option value="" disabled selected>Laboratorio Farmaceutico</option>
+                            <option value="sinovac">Sinovac</option>
+                            <option value="moderna">Moderna</option>
+                            <option value="janssen">Janssen</option>
+                            <option value="pfizer">Pfizer</option>
+                            <option value="astraZeneca">AstraZeneca</option> -->
+                        </select>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 l6">
-                            <input id="1er_dosis" type="text" class="datepicker" disabled required>
-                            <label for="1er_dosis">Fecha Primera Dosis</label>
+                            <input id="primer_dosis" type="text" class="datepicker" disabled required>
+                            <label id="primer_dosis_label" for="primer_dosis">Fecha Primera Dosis</label>
                         </div>
 
                         <div class="input-field col s12 l6">
-                            <input id="2da_dosis" type="text" class="datepicker" disabled>
-                            <label for="2da_dosis">Fecha Segunda Dosis</label>
+                            <input id="segunda_dosis" type="text" class="datepicker" disabled>
+                            <label id="segunda_dosis_label" for="segunda_dosis">Fecha Segunda Dosis</label>
                         </div>
                     </div>
                     <div class="row">
@@ -171,7 +173,6 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
 
 </body>
 
