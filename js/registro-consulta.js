@@ -138,3 +138,58 @@ campoSegundaDosis.addEventListener('change', () => {
     campoEsquema.checked = true;
     M.toast({ html: "Esquema de vacunación completado", classes: "rounded" });
 });
+
+
+
+//Función que registra un paciente en la base de datos por medio del API
+const registraPaciente = async (url) => {
+    let cedula = campoCedula.value;
+    let nombre = campoNombre.value;
+    let telefono = campoTelefono.value;
+    let laboratorio = {
+        id: selectVacunas.value 
+    };
+    let primera_dosis = campoPrimerDosis.value;
+    let segunda_dosis = campoSegundaDosis.value;
+    let esquema_completo = campoEsquema.checked ? 1 : 0;
+
+    // console.log(JSON.stringify({
+    //     cedula,
+    //     nombre,
+    //     telefono,
+    //     laboratorio,
+    //     primera_dosis,
+    //     segunda_dosis,
+    //     esquema_completo
+    // }));
+
+    const response = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        cache: "no-cache",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            cedula,
+            nombre,
+            telefono,
+            laboratorio,
+            primera_dosis,
+            segunda_dosis,
+            esquema_completo
+        })
+    });
+    
+    const data = await response.json();
+    // console.log(data);
+}
+
+
+//Cuando se envía el formulario a guardar ejecuta la función registraPaciente()
+const formulario = document.querySelector('#form_info');
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    registraPaciente(`${API_URL}pacientes`);
+});
+

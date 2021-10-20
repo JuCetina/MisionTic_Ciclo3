@@ -59,7 +59,7 @@
                     
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
-                            <input id="cedulab" type="text" class="busca_cedula validate" required>
+                            <input name="num_cedula" id="cedulab" type="text" class="busca_cedula validate" required>
                             <label for="cedulab">Numero de Cedula</label>
                         </div>
                     </div>
@@ -75,13 +75,13 @@
 
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
-                            <input id="cedula" type="text" class="validate" required>
+                            <input name="cedula" id="cedula" type="text" class="validate" required>
                             <label id="cedula_label" for="cedula">Cédula</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m10 ">
-                            <input id="nombre" type="text" class="validate" required>
+                            <input name="nombre" id="nombre" type="text" class="validate" required>
                             <label id="nombre_label" for="nombre">Nombre Completo</label>
                         </div>
                     </div>
@@ -89,14 +89,14 @@
                     
                     <div class="row">
                         <div class="input-field col s12 m10 l8">
-                            <input id="telefono" type="tel" class="validate" required>
+                            <input name="telefono" id="telefono" type="tel" class="validate" required>
                             <label id="telefono_label" for="telefono">Teléfono</label>
                         </div>
                     </div>
                     
                     <div>
                         <label class="col s8">Escoja una opcion</label>
-                        <select id="farmaceutica" class="browser-default col s8" required>
+                        <select name="farmaceutica" id="farmaceutica" class="browser-default col s8" required>
                             <!-- <option value="" disabled selected>Laboratorio Farmaceutico</option>
                             <option value="sinovac">Sinovac</option>
                             <option value="moderna">Moderna</option>
@@ -107,19 +107,19 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s12 l6">
-                            <input id="primer_dosis" type="text" class="datepicker" disabled required>
+                            <input name="primera" id="primer_dosis" type="text" class="datepicker" disabled required>
                             <label id="primer_dosis_label" for="primer_dosis">Fecha Primera Dosis</label>
                         </div>
 
                         <div class="input-field col s12 l6">
-                            <input id="segunda_dosis" type="text" class="datepicker" disabled>
+                            <input name="segunda" id="segunda_dosis" type="text" class="datepicker" disabled>
                             <label id="segunda_dosis_label" for="segunda_dosis">Fecha Segunda Dosis</label>
                         </div>
                     </div>
                     <div class="row">
                         <p>
                             <label>
-                              <input id="esquema" type="checkbox" disabled/>
+                              <input name="esquema" id="esquema" type="checkbox" disabled/>
                               <span>Esquema Completo</span>
                             </label>
                         </p>
